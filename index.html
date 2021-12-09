@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="BMI">
+	<meta name="description" content="ＢＭＩ計算アプリです。">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ＢＭＩ計算アプリ</title>
+	<link rel="icon" type="image" href="img/logo.jpg">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+
+</head>
+
+<!-- body -->
+
+<body>
+	<header class="header">
+		<h1 class="header-title darkgreen">
+			ＢＭＩ計算アプリです。
+		</h1>
+	</header>
+
+	<!-- choice -->
+	<div class="choice">
+		<p><span>身長</span>と<span>体重</span>を入力して下さい。</p>
+
+		<form>
+			<table class="choice_table">
+				<tr>
+					<th>
+						<p><span>身長</span>は</p>
+					</th>
+					<td>
+						<input type="number" name="height" class="height fs-xl ta-c" id="js_height" step="0.1" min="0" value="170" required>
+					</td>
+					<th>
+						<p> cm</p>
+					</th>
+				</tr>
+
+				<tr>
+					<th>
+						<p><span>体重</span>は</p>
+					</th>
+					<td>
+						<input type="number" name="weight" class="weight fs-xl ta-c" id="js_weight" step="0.1" min="0" value="60" required>
+					</td>
+					<th>
+						<p> kg</p>
+					</th>
+				</tr>
+			</table>
+		</form>
+
+			<button onclick="bmi()" class="bmi-btn bc-darkgreen fs-l">
+				ＢＭＩ測定ボタン
+			</button>
+		
+	</div>
+
+	<!-- メッセージウインドウ -->
+	<div id="js_textContainer" class="textContainer bc-black white">
+		<!-- ＢＭＩの計算結果を表示する -->
+		<p id="js_text" class="text bc-black white"></p>
+	</div>
+
+
+	<!------------
+		⇩JavaScript⇩
+	 ------------>
+
+	<!-- ＢＭＩを計算する.js -->
+	<script type="text/javascript" src="js/bmi.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+/* 全体向けCSS */
+
+html {
+	width: 80%;
+	text-align: center;
+	margin: 0px auto;
+}
+
+body {
+	background: whitesmoke;
+}
+
+button:hover{cursor: pointer;} /* すべてのボタンをホバーしたとき、マウスカーソルを変更する */
+
+/* ------------------------------------------
+	header
+------------------------------------------ */
+
+header {
+	border: 5px solid gray;
+	border-radius: 50px;
+  background: linear-gradient(to left top, #777, #ddd, #777);
+	margin: 0px auto;
+}
+
+/*----------------------------
+	choice
+-------------------------- */
+.choice{
+	grid-area: choice;
+	display: inline-block;
+	margin: 0px auto;
+	width: 90%;
+	color: #fff;
+	background-color: #888;
+	border: gold solid 10px;
+	border-radius: 10px;
+}
+
+.choice_table{ margin: 0 auto; }
+
+.choice p span{
+	color: #eee;
+	font-size: 1.2em;
+	background:linear-gradient(transparent 85%, gold 85%);
+}
+
+.height,.weight{
+	display: inline-block;
+
+	width: 100px;
+	height: 40px;
+}
+/*----------------------------
+	bmi-btn
+-------------------------- */
+
+.bmi-btn {
+	min-width: 200px;
+	height: 50px;
+	display: block;
+	margin: 3px auto;
+	padding: 0;
+	cursor: pointer;
+	border: solid whitesmoke 10px;
+	border-radius: 25px;
+
+}
+/*----------------------------
+	textContainer のメッセージウィンドウ
+-------------------------- */
+.textContainer{
+	grid-area: under;
+	margin: 0px auto;
+	font-size: large;
+	border: 10px solid gray;
+	border-radius: 5px;
+	width: 90%;
+	min-height: 200px;
+}
+
+
+/* ------------------------------------------
+	スマートフォン対応CSS
+------------------------------------------ */
+
+	@media(max-width:767px) {
+	/* ------------------------------------------
+		全体    @media(max-width:767px)
+	------------------------------------------ */
+	html { width: 100%; }
+
+	}
