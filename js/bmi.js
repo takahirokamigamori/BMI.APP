@@ -18,7 +18,7 @@ const bmi = () => {
   console.log("体重は " + weight + "kg です。");
 
   /* ＢＭＩを計算する */
-  const ans = weight / height *100 ;
+  const ans = weight / ( ( height / 100 ) **2 ) ;
   console.log(ans);
 
   /* メッセージウィンドウを取得 */
